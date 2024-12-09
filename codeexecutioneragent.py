@@ -44,5 +44,7 @@ code_writer_agent = ConversableAgent(
 
 result = code_executor_agent.initiate_chat(
     code_writer_agent,
-    message="Write Python code to reverse the string 'HelloWorld'.",
+    message="Write Python code to: 1) Reverse the string 'HelloWorld', and 2) Count the number of vowels in it."
 )
+
+temp_dir.cleanup()
